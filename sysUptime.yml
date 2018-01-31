@@ -1,0 +1,9 @@
+---
+- hosts: 192.168.1.25 
+  remote_user: root
+  gather_facts: False
+  tasks:
+  - name: running system uptime 
+    command: uptime
+    register: git
+  - debug: var=git.stdout
