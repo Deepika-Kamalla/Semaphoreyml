@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.1.25 
+- hosts: webservers
   remote_user: root
   gather_facts: False
   tasks:
