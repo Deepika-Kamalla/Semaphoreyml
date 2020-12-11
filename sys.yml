@@ -1,9 +1,0 @@
----
-- hosts: webservers
-  remote_user: root
-  gather_facts: False
-  tasks:
-  - name: running system uptime 
-    command: uptime
-    register: git
-  - debug: var=git.stdout
